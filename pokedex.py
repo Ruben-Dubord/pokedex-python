@@ -21,10 +21,12 @@ type_colors = {
 	'fée': '#D685AD',
 }
 
-dico_pokemon = [{'number':'001',
-                 'name':'bulbizarre',
-                 'types':['plante','poison'],
-                 'size': '80',
-                 'weight': '30',
-                 'species': 'bulbe',
-                 'description':'bulle bizarre un peu nan'}]
+dico_pokemon = {
+    '001':{
+        'name':'bulbizarre',
+        'types':['plante','poison'],
+        'size': '80',
+        'weight': '30',
+        'species': 'bulbe',
+        'description':'bulle bizarre un peu nan'},
+    }
