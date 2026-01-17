@@ -64,7 +64,12 @@ def draw_text(surface, text, font, color, x, y):
 # ---------- INITIALISATION ----------
 pygame.init()
 pygame.font.init()
-pygame.mixer.init()  # initialisation du son pour les cris
+pygame.mixer.init()  # initialisation du son
+
+# --- MUSIQUE DE FOND ---
+pygame.mixer.music.load("sounds/bgm/dreamyard.wav")
+pygame.mixer.music.set_volume(0.5)
+pygame.mixer.music.play(-1)  # boucle infinie
 
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 600
@@ -76,7 +81,7 @@ font = pygame.font.Font("fonts/pokemon-dppt.ttf", 28)
 small_font = pygame.font.Font("fonts/pokemon-dppt.ttf", 18)
 
 # ---------- DONNÉES POKÉMON ----------
-pokemon_id = '001'  # ID actuel
+pokemon_id = '001'
 pokemon = dico_pokemon[pokemon_id]
 
 number = pokemon_id
@@ -138,7 +143,6 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-        # Navigation avec flèches gauche/droite
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 current_index = (current_index + 1) % len(pokemon_ids_sorted)
@@ -179,7 +183,7 @@ while running:
 
             # Jouer le cri du Pokémon
             if current_cry:
-                current_cry.stop()  # arrêter le cri précédent
+                current_cry.stop()
             try:
                 if "cry_path" in pokemon:
                     current_cry = pygame.mixer.Sound(pokemon["cry_path"])
@@ -203,29 +207,25 @@ while running:
     screen.blit(grid_surface, (grid_offset_x, 0))
     screen.blit(grid_surface, (grid_offset_x + WINDOW_WIDTH, 0))
 
-    # ---- Bande du haut : Pokémon précédent / suivant ----
+    # ---- Bande du haut ----
     previous_next_band_height = 60
     previous_next_band_y = 0
     previous_next_band_x = 0
     previous_next_band_width = WINDOW_WIDTH
-
     previous_next_band = pygame.Surface((previous_next_band_width, previous_next_band_height), pygame.SRCALPHA)
     previous_next_band.fill((0,0,0,180))
     screen.blit(previous_next_band, (previous_next_band_x, previous_next_band_y))
 
-    # Calcul Pokémon précédent / suivant
     previous_index = (current_index - 1) % len(pokemon_ids_sorted)
     next_index = (current_index + 1) % len(pokemon_ids_sorted)
     prev_pokemon = dico_pokemon[pokemon_ids_sorted[previous_index]]
     next_pokemon = dico_pokemon[pokemon_ids_sorted[next_index]]
 
-    # Texte à gauche (précédent)
     screen.blit(
         font.render(f"•{pokemon_ids_sorted[previous_index]} {prev_pokemon['name']}", True, (255,255,255)),
         (20, previous_next_band_y + 10)
     )
 
-    # Texte à droite (suivant)
     next_text = font.render(f"•{pokemon_ids_sorted[next_index]} {next_pokemon['name']}", True, (255,255,255))
     next_text_rect = next_text.get_rect(topright=(WINDOW_WIDTH - 20, previous_next_band_y + 10))
     screen.blit(next_text, next_text_rect)
@@ -235,32 +235,26 @@ while running:
     info_panel_height = max(250, footprint_image.get_height() + 20)
     sprite_width = frames[0].get_width()
     sprite_height = frames[0].get_height()
-
     band_height = 290
     band_y = (WINDOW_HEIGHT - band_height) // 2
     band_x = 0
     band_width = WINDOW_WIDTH
-
     band_surface = pygame.Surface((band_width, band_height), pygame.SRCALPHA)
     band_surface.fill((0,0,0,180))
     screen.blit(band_surface, (band_x, band_y))
 
-    # Sprite à gauche
     sprite_x = band_x + 100
     sprite_y = band_y + (band_height - sprite_height)//2
     screen.blit(frames[current_frame], (sprite_x, sprite_y))
 
-    # Panel info + stats + empreinte
     info_panel_x = WINDOW_WIDTH // 2 - 25
     info_panel_y = band_y + 20
     info_panel_surface = pygame.Surface((info_panel_width, info_panel_height), pygame.SRCALPHA)
     info_panel_surface.fill((255,255,255,180))
     screen.blit(info_panel_surface, (info_panel_x, info_panel_y))
 
-    # Nom + numéro
     screen.blit(font.render(f"•{number} {name}", True, (0,0,0)), (info_panel_x + 20, info_panel_y + 20))
 
-    # Types
     type_x = info_panel_x + 20
     type_y = info_panel_y + 70
     for t in types:
@@ -271,14 +265,12 @@ while running:
         screen.blit(type_text, text_rect)
         type_x += rect_width + 10
 
-    # Stats
     stats_x = info_panel_x + 20
     stats_y = info_panel_y + 120
     draw_text(screen, f"Taille: {size} m", font, (0,0,0), stats_x, stats_y)
     draw_text(screen, f"Poids: {weight} kg", font, (0,0,0), stats_x, stats_y + 30)
     draw_text(screen, f"{species}", font, (0,0,0), stats_x, stats_y + 60)
 
-    # Empreinte à droite des stats
     footprint_panel_width = footprint_image.get_width() + 20
     footprint_panel_height = footprint_image.get_height() + 20
     footprint_panel_surface = pygame.Surface((footprint_panel_width, footprint_panel_height), pygame.SRCALPHA)
@@ -289,7 +281,6 @@ while running:
     footprint_rect.topleft = (footprint_panel_x + 10, footprint_panel_y + 10)
     screen.blit(footprint_image, footprint_rect)
 
-    # Description en bas
     desc_panel_height = 120
     desc_panel = pygame.Surface((WINDOW_WIDTH - 40, desc_panel_height), pygame.SRCALPHA)
     desc_panel.fill((0,0,0,180))
