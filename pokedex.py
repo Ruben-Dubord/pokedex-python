@@ -1,5 +1,3 @@
-import pygame
-
 type_colors = {
 	'normal': '#A8A77A',
 	'feu': '#EE8130',
@@ -23,10 +21,13 @@ type_colors = {
 
 dico_pokemon = {
     '001':{
-        'name':'bulbizarre',
+        'name':'Bulbizarre',
         'types':['plante','poison'],
         'size': '80',
         'weight': '30',
         'species': 'bulbe',
-        'description':'bulle bizarre un peu nan'},
+        'description':'bulle bizarre un peu nan',
+        'sprite_path':'images/sprites/1.gif',
+        "footprint_path": 'images/footprints/1.png',
+        },
     }
