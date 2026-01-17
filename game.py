@@ -64,6 +64,7 @@ def draw_text(surface, text, font, color, x, y):
 # ---------- INITIALISATION ----------
 pygame.init()
 pygame.font.init()
+pygame.mixer.init()  # initialisation du son pour les cris
 
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 600
@@ -120,7 +121,14 @@ grid_speed = 0.3
 pokemon_ids_sorted = sorted(dico_pokemon.keys())
 current_index = pokemon_ids_sorted.index(pokemon_id)
 
-# ... ton code reste inchangé jusqu'à la boucle principale ...
+# Jouer le cri initial
+current_cry = None
+if "cry_path" in pokemon:
+    try:
+        current_cry = pygame.mixer.Sound(pokemon["cry_path"])
+        current_cry.play()
+    except Exception as e:
+        print(f"Impossible de jouer le cri pour {pokemon['name']}: {e}")
 
 # ---------- BOUCLE PRINCIPALE ----------
 running = True
@@ -137,7 +145,7 @@ while running:
             elif event.key == pygame.K_LEFT:
                 current_index = (current_index - 1) % len(pokemon_ids_sorted)
 
-            # Mise à jour du Pokémon courant
+            # Mettre à jour le Pokémon courant
             pokemon_id = pokemon_ids_sorted[current_index]
             pokemon = dico_pokemon[pokemon_id]
             number = pokemon_id
@@ -168,6 +176,16 @@ while running:
             # Mettre à jour la couleur de fond
             colors = [hex_to_rgb(type_colors[t]) for t in types]
             background_color = mix_colors(colors)
+
+            # Jouer le cri du Pokémon
+            if current_cry:
+                current_cry.stop()  # arrêter le cri précédent
+            try:
+                if "cry_path" in pokemon:
+                    current_cry = pygame.mixer.Sound(pokemon["cry_path"])
+                    current_cry.play()
+            except Exception as e:
+                print(f"Impossible de jouer le cri pour {pokemon['name']}: {e}")
 
     # Animation GIF
     time_accumulator += dt

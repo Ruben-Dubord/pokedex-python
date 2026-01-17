@@ -29,6 +29,7 @@ dico_pokemon = {
         "description": "Une graine est plantée sur son dos à la naissance. Elle grandit lentement en captant la lumière.",
         "sprite_path": "images/sprites/1.gif",
         "footprint_path": "images/footprints/1.png",
+        "cry_path": "sounds/cries/1.ogg",
     },
     "002": {
         "name": "Herbizarre",
@@ -39,6 +40,7 @@ dico_pokemon = {
         "description": "Le bulbe sur son dos commence à fleurir lorsqu’il absorbe suffisamment de nutriments.",
         "sprite_path": "images/sprites/2.gif",
         "footprint_path": "images/footprints/2.png",
+        "cry_path": "sounds/cries/2.ogg",
     },
     "003": {
         "name": "Florizarre",
@@ -49,6 +51,7 @@ dico_pokemon = {
         "description": "La grande fleur sur son dos absorbe la lumière pour alimenter ses puissantes capacités.",
         "sprite_path": "images/sprites/3.gif",
         "footprint_path": "images/footprints/3.png",
+        "cry_path": "sounds/cries/3.ogg",
     },
     "004": {
         "name": "Salamèche",
@@ -59,6 +62,7 @@ dico_pokemon = {
         "description": "La flamme sur sa queue brûle selon sa santé et son humeur.",
         "sprite_path": "images/sprites/4.gif",
         "footprint_path": "images/footprints/4.png",
+        "cry_path": "sounds/cries/4.ogg",
     },
     "005": {
         "name": "Reptincel",
@@ -69,6 +73,7 @@ dico_pokemon = {
         "description": "Extrêmement agressif, il utilise sa queue embrasée pour frapper ses adversaires.",
         "sprite_path": "images/sprites/5.gif",
         "footprint_path": "images/footprints/5.png",
+        "cry_path": "sounds/cries/5.ogg",
     },
     "006": {
         "name": "Dracaufeu",
@@ -79,6 +84,7 @@ dico_pokemon = {
         "description": "Il peut voler haut dans le ciel en crachant des flammes ardentes.",
         "sprite_path": "images/sprites/6.gif",
         "footprint_path": "images/footprints/6.png",
+        "cry_path": "sounds/cries/6.ogg",
     },
     "007": {
         "name": "Carapuce",
@@ -89,6 +95,7 @@ dico_pokemon = {
         "description": "Quand il est menacé, il se réfugie dans sa carapace pour se protéger.",
         "sprite_path": "images/sprites/7.gif",
         "footprint_path": "images/footprints/7.png",
+        "cry_path": "sounds/cries/7.ogg",
     },
     "008": {
         "name": "Carabaffe",
@@ -99,6 +106,7 @@ dico_pokemon = {
         "description": "Ses puissants jets d’eau sortent de ses canons dorsaux.",
         "sprite_path": "images/sprites/8.gif",
         "footprint_path": "images/footprints/8.png",
+        "cry_path": "sounds/cries/8.ogg",
     },
     "009": {
         "name": "Tortank",
@@ -109,6 +117,7 @@ dico_pokemon = {
         "description": "Ses canons d’eau hypertrophiés lui permettent d’écraser ses opposants.",
         "sprite_path": "images/sprites/9.gif",
         "footprint_path": "images/footprints/9.png",
+        "cry_path": "sounds/cries/9.ogg",
     },
         "010": {
         "name": "Chenipan",
@@ -119,6 +128,7 @@ dico_pokemon = {
         "description": "Pour se protéger, il libère une puanteur horrible depuis les antennes sur sa tête pour repousser ses ennemis.",
         "sprite_path": "images/sprites/10.gif",
         "footprint_path": "images/footprints/10.png",
+        "cry_path": "sounds/cries/10.ogg",
     },
     "011": {
         "name": "Chrysacier",
@@ -129,6 +139,7 @@ dico_pokemon = {
         "description": "Il attend le moment d’évoluer. À ce stade, il ne peut que durcir, restant immobile pour éviter les attaques.",
         "sprite_path": "images/sprites/11.gif",
         "footprint_path": "images/footprints/11.png",
+        "cry_path": "sounds/cries/11.ogg",
     },
     "012": {
         "name": "Papilusion",
@@ -139,6 +150,7 @@ dico_pokemon = {
         "description": "En combat, il bat des ailes à grande vitesse pour libérer une poussière très toxique dans les airs.",
         "sprite_path": "images/sprites/12.gif",
         "footprint_path": "images/footprints/12.png",
+        "cry_path": "sounds/cries/12.ogg",
     },
     "013": {
         "name": "Aspicot",
@@ -149,6 +161,7 @@ dico_pokemon = {
         "description": "Fais attention à l’aiguillon pointu sur sa tête. Il se cache dans les herbes pour manger des feuilles.",
         "sprite_path": "images/sprites/13.gif",
         "footprint_path": "images/footprints/13.png",
+        "cry_path": "sounds/cries/13.ogg",
     },
     "014": {
         "name": "Coconfort",
@@ -159,6 +172,7 @@ dico_pokemon = {
         "description": "Il ne peut bouger que très légèrement. Lorsqu’il est en danger, il peut ressortir son aiguillon et empoisonner l’ennemi.",
         "sprite_path": "images/sprites/14.gif",
         "footprint_path": "images/footprints/14.png",
+        "cry_path": "sounds/cries/14.ogg",
     },
     "015": {
         "name": "Dardargnan",
@@ -169,6 +183,7 @@ dico_pokemon = {
         "description": "Il a trois aiguillons empoisonnés sur ses pattes avant et sa queue. Ils servent à piquer son ennemi encore et encore.",
         "sprite_path": "images/sprites/15.gif",
         "footprint_path": "images/footprints/15.png",
+        "cry_path": "sounds/cries/15.ogg",
     },
     "016": {
         "name": "Roucool",
@@ -179,6 +194,7 @@ dico_pokemon = {
         "description": "Très docile. S’il est attaqué, il soulève souvent du sable pour se protéger plutôt que d’attaquer.",
         "sprite_path": "images/sprites/16.gif",
         "footprint_path": "images/footprints/16.png",
+        "cry_path": "sounds/cries/16.ogg",
     },
     "017": {
         "name": "Roucoups",
@@ -189,6 +205,7 @@ dico_pokemon = {
         "description": "Ce Pokémon est plein de vitalité. Il vole constamment autour de son grand territoire à la recherche de proies.",
         "sprite_path": "images/sprites/17.gif",
         "footprint_path": "images/footprints/17.png",
+        "cry_path": "sounds/cries/17.ogg",
     },
     "018": {
         "name": "Roucarnage",
@@ -199,6 +216,7 @@ dico_pokemon = {
         "description": "Il vole à une vitesse équivalente à Mach 2, à la recherche de proies. Ses grandes serres sont redoutées comme armes féroces.",
         "sprite_path": "images/sprites/18.gif",
         "footprint_path": "images/footprints/18.png",
+        "cry_path": "sounds/cries/18.ogg",
     },
     "019": {
         "name": "Rattata",
@@ -209,6 +227,7 @@ dico_pokemon = {
         "description": "Il mâche n’importe quoi avec ses dents pointues. Si vous en voyez un, il y en a sûrement beaucoup d’autres dans les environs.",
         "sprite_path": "images/sprites/19.gif",
         "footprint_path": "images/footprints/19.png",
+        "cry_path": "sounds/cries/19.ogg",
     },
     "020": {
         "name": "Rattatac",
@@ -219,6 +238,7 @@ dico_pokemon = {
         "description": "Ses pattes arrière sont palmées. Elles agissent comme des nageoires pour nager dans les rivières et chasser des proies.",
         "sprite_path": "images/sprites/20.gif",
         "footprint_path": "images/footprints/20.png",
+        "cry_path": "sounds/cries/20.ogg",
     },
         "021": {
         "name": "Spearow",
@@ -229,6 +249,7 @@ dico_pokemon = {
         "description": "Inapte à voler haut. Cependant, il peut voler rapidement autour de son territoire pour le protéger.",
         "sprite_path": "images/sprites/21.gif",
         "footprint_path": "images/footprints/21.png",
+        "cry_path": "sounds/cries/21.ogg",
     },
     "022": {
         "name": "Fearow",
@@ -239,6 +260,7 @@ dico_pokemon = {
         "description": "Un Pokémon très ancien. S’il sent le danger, il s’envole instantanément très haut.",
         "sprite_path": "images/sprites/22.gif",
         "footprint_path": "images/footprints/22.png",
+        "cry_path": "sounds/cries/22.ogg",
     },
     "023": {
         "name": "Ekans",
@@ -249,6 +271,7 @@ dico_pokemon = {
         "description": "Plus il vieillit, plus il grandit. La nuit, il s’enroule autour des branches pour se reposer.",
         "sprite_path": "images/sprites/23.gif",
         "footprint_path": "images/footprints/23.png",
+        "cry_path": "sounds/cries/23.ogg",
     },
     "024": {
         "name": "Arbok",
@@ -259,6 +282,7 @@ dico_pokemon = {
         "description": "Les motifs effrayants sur son ventre ont été étudiés. Six variations ont été confirmées.",
         "sprite_path": "images/sprites/24.gif",
         "footprint_path": "images/footprints/24.png",
+        "cry_path": "sounds/cries/24.ogg",
     },
     "025": {
         "name": "Pikachu",
@@ -269,6 +293,7 @@ dico_pokemon = {
         "description": "Les Pikachu capables de générer de puissantes décharges ont des sacs jugulaires extra‑souples et extensibles.",
         "sprite_path": "images/sprites/25.gif",
         "footprint_path": "images/footprints/25.png",
+        "cry_path": "sounds/cries/25.ogg",
     },
     "026": {
         "name": "Raichu",
@@ -279,26 +304,29 @@ dico_pokemon = {
         "description": "Sa longue queue sert de mise à la terre pour se protéger de sa propre haute tension.",
         "sprite_path": "images/sprites/26.gif",
         "footprint_path": "images/footprints/26.png",
+        "cry_path": "sounds/cries/26.ogg",
     },
     "027": {
-        "name": "Sandshrew",
-        "types": ["sol", "glace"],
+        "name": "Sabelette",
+        "types": ["sol"],
         "size": "0.6",
         "weight": "12.0",
         "species": "Pokémon Souris",
         "description": "Il adore se rouler dans le sable sec. En faisant cela, il se débarrasse de la saleté et de l’humidité collant à son corps.",
         "sprite_path": "images/sprites/27.gif",
         "footprint_path": "images/footprints/27.png",
+        "cry_path": "sounds/cries/27.ogg",
     },
     "028": {
-        "name": "Sandslash",
-        "types": ["sol", "glace"],
+        "name": "Sablaireau",
+        "types": ["sol"],
         "size": "1.0",
         "weight": "29.5",
         "species": "Pokémon Souris",
-        "description": "Plus l’endroit où vit Sandslash est sec, plus ses piquants sont durs et lisses au toucher.",
+        "description": "Plus l’endroit où vit Sablaireau est sec, plus ses piquants sont durs et lisses au toucher.",
         "sprite_path": "images/sprites/28.gif",
         "footprint_path": "images/footprints/28.png",
+        "cry_path": "sounds/cries/28.ogg",
     },
     "029": {
         "name": "Nidoran♀",
@@ -309,6 +337,7 @@ dico_pokemon = {
         "description": "Les femelles sont plus sensibles aux odeurs que les mâles. En cherchant de la nourriture, elles utilisent leurs moustaches pour vérifier la direction du vent et rester sous le vent des prédateurs.",
         "sprite_path": "images/sprites/29.gif",
         "footprint_path": "images/footprints/29.png",
+        "cry_path": "sounds/cries/29.ogg",
     },
     "030": {
         "name": "Nidorina",
@@ -319,6 +348,7 @@ dico_pokemon = {
         "description": "La corne sur sa tête s’est atrophiée. On pense que cela se produit pour que les enfants de Nidorina ne se fassent pas piquer en se nourrissant.",
         "sprite_path": "images/sprites/30.gif",
         "footprint_path": "images/footprints/30.png",
+        "cry_path": "sounds/cries/30.ogg",
     },
     "031": {
         "name": "Nidoqueen",
@@ -329,6 +359,7 @@ dico_pokemon = {
         "description": "Nidoqueen est plus forte en défense qu’en attaque. Avec ses écailles comme armure, elle protège ses enfants de toute attaque.",
         "sprite_path": "images/sprites/31.gif",
         "footprint_path": "images/footprints/31.png",
+        "cry_path": "sounds/cries/31.ogg",
     },
     "032": {
         "name": "Nidoran♂",
@@ -339,6 +370,7 @@ dico_pokemon = {
         "description": "La corne sur le front du Nidoran mâle contient un poison puissant. C’est un Pokémon très prudent, toujours à l’écoute avec ses grandes oreilles.",
         "sprite_path": "images/sprites/32.gif",
         "footprint_path": "images/footprints/32.png",
+        "cry_path": "sounds/cries/32.ogg",
     },
     "033": {
         "name": "Nidorino",
@@ -349,6 +381,7 @@ dico_pokemon = {
         "description": "Avec une corne plus dure que le diamant, ce Pokémon brise les rochers en cherchant une Pierre Lune.",
         "sprite_path": "images/sprites/33.gif",
         "footprint_path": "images/footprints/33.png",
+        "cry_path": "sounds/cries/33.ogg",
     },
     "034": {
         "name": "Nidoking",
@@ -359,6 +392,7 @@ dico_pokemon = {
         "description": "Quand il se déchaîne, il est impossible de le contrôler. Mais en présence d’une Nidoqueen qu’il connaît depuis longtemps, il se calme.",
         "sprite_path": "images/sprites/34.gif",
         "footprint_path": "images/footprints/34.png",
+        "cry_path": "sounds/cries/34.ogg",
     },
     "035": {
         "name": "Mélofée",
@@ -369,6 +403,7 @@ dico_pokemon = {
         "description": "On dit que le bonheur vient à ceux qui voient un groupe de Mélofées danser sous une pleine lune.",
         "sprite_path": "images/sprites/35.gif",
         "footprint_path": "images/footprints/35.png",
+        "cry_path": "sounds/cries/35.ogg",
     },
     "036": {
         "name": "Mélodelfe",
@@ -379,6 +414,7 @@ dico_pokemon = {
         "description": "C’est un Pokémon timide rarement vu. Il s’enfuit à la seconde où il sent des humains.",
         "sprite_path": "images/sprites/36.gif",
         "footprint_path": "images/footprints/36.png",
+        "cry_path": "sounds/cries/36.ogg",
     },
     "037": {
         "name": "Goupix",
@@ -389,6 +425,7 @@ dico_pokemon = {
         "description": "Quand il est jeune, il a six belles queues. En grandissant, plusieurs nouvelles queues poussent.",
         "sprite_path": "images/sprites/37.gif",
         "footprint_path": "images/footprints/37.png",
+        "cry_path": "sounds/cries/37.ogg",
     },
     "038": {
         "name": "Feunard",
@@ -399,6 +436,7 @@ dico_pokemon = {
         "description": "On dit qu’il vit 1 000 ans, et chacune de ses queues est chargée de pouvoirs surnaturels.",
         "sprite_path": "images/sprites/38.gif",
         "footprint_path": "images/footprints/38.png",
+        "cry_path": "sounds/cries/38.ogg",
     },
     "039": {
         "name": "Rondoudou",
@@ -409,6 +447,7 @@ dico_pokemon = {
         "description": "Rondoudou a une capacité pulmonaire exceptionnelle. Il ne cesse pas de chanter ses berceuses jusqu’à ce que ses adversaires s’endorment.",
         "sprite_path": "images/sprites/39.gif",
         "footprint_path": "images/footprints/39.png",
+        "cry_path": "sounds/cries/39.ogg",
     },
     "040": {
         "name": "Grodoudou",
@@ -419,6 +458,7 @@ dico_pokemon = {
         "description": "Plus il inspire d’air, plus il gonfle. Si ses adversaires le surprennent de mauvaise humeur, il s’enfle pour les intimider.",
         "sprite_path": "images/sprites/40.gif",
         "footprint_path": "images/footprints/40.png",
+        "cry_path": "sounds/cries/40.ogg",
     },
     "041": {
         "name": "Nosferapti",
@@ -429,6 +469,7 @@ dico_pokemon = {
         "description": "Il vole à la recherche de proies la nuit et peut infliger un poison mortel avec ses crocs.",
         "sprite_path": "images/sprites/41.gif",
         "footprint_path": "images/footprints/41.png",
+        "cry_path": "sounds/cries/41.ogg",
     },
     "042": {
         "name": "Nosferalto",
@@ -439,6 +480,7 @@ dico_pokemon = {
         "description": "Il plane silencieusement et attaque ses proies sans qu’elles puissent le voir venir.",
         "sprite_path": "images/sprites/42.gif",
         "footprint_path": "images/footprints/42.png",
+        "cry_path": "sounds/cries/42.ogg",
     },
     "043": {
         "name": "Mystherbe",
@@ -449,6 +491,7 @@ dico_pokemon = {
         "description": "Les deux feuilles sur sa tête ont un parfum unique qui attire ses proies.",
         "sprite_path": "images/sprites/43.gif",
         "footprint_path": "images/footprints/43.png",
+        "cry_path": "sounds/cries/43.ogg",
     },
     "044": {
         "name": "Ortide",
@@ -459,6 +502,7 @@ dico_pokemon = {
         "description": "Il utilise ses feuilles pour capturer les insectes et les digérer avec ses enzymes.",
         "sprite_path": "images/sprites/44.gif",
         "footprint_path": "images/footprints/44.png",
+        "cry_path": "sounds/cries/44.ogg",
     },
     "045": {
         "name": "Rafflesia",
@@ -469,6 +513,7 @@ dico_pokemon = {
         "description": "La grande fleur sur son dos émet un parfum très puissant qui attire les insectes pour se nourrir.",
         "sprite_path": "images/sprites/45.gif",
         "footprint_path": "images/footprints/45.png",
+        "cry_path": "sounds/cries/45.ogg",
     },
     "046": {
         "name": "Paras",
@@ -479,6 +524,7 @@ dico_pokemon = {
         "description": "Les champignons sur son dos absorbent les nutriments de Paras pour se développer.",
         "sprite_path": "images/sprites/46.gif",
         "footprint_path": "images/footprints/46.png",
+        "cry_path": "sounds/cries/46.ogg",
     },
     "047": {
         "name": "Parasect",
@@ -489,6 +535,7 @@ dico_pokemon = {
         "description": "Le champignon sur son dos a pris le contrôle de son corps. Il se déplace lentement en fonction de lui.",
         "sprite_path": "images/sprites/47.gif",
         "footprint_path": "images/footprints/47.png",
+        "cry_path": "sounds/cries/47.ogg",
     },
     "048": {
         "name": "Mimitoss",
@@ -499,6 +546,7 @@ dico_pokemon = {
         "description": "Ses yeux rouges projettent des toxines qui paralysent les ennemis et les insectes de taille moyenne.",
         "sprite_path": "images/sprites/48.gif",
         "footprint_path": "images/footprints/48.png",
+        "cry_path": "sounds/cries/48.ogg",
     },
     "049": {
         "name": "Aéromite",
@@ -509,6 +557,7 @@ dico_pokemon = {
         "description": "Sa vitesse de vol est étonnante. Il attaque les proies et les Pokémon ennemis avec ses spores toxiques.",
         "sprite_path": "images/sprites/49.gif",
         "footprint_path": "images/footprints/49.png",
+        "cry_path": "sounds/cries/49.ogg",
     },
     "050": {
         "name": "Taupiqueur",
@@ -519,6 +568,7 @@ dico_pokemon = {
         "description": "Il creuse rapidement des tunnels souterrains et émerge seulement pour se nourrir ou se battre.",
         "sprite_path": "images/sprites/50.gif",
         "footprint_path": "images/footprints/50.png",
+        "cry_path": "sounds/cries/50.ogg",
     },
     "051": {
         "name": "Triopikeur",
@@ -529,6 +579,7 @@ dico_pokemon = {
         "description": "Avec ses trois nez, il peut détecter les vibrations dans le sol pour localiser les proies ou le danger.",
         "sprite_path": "images/sprites/51.gif",
         "footprint_path": "images/footprints/51.png",
+        "cry_path": "sounds/cries/51.ogg",
     },
     "052": {
         "name": "Miaouss",
@@ -539,6 +590,7 @@ dico_pokemon = {
         "description": "Il adore voler les objets brillants et sa grande agilité lui permet de s’échapper rapidement.",
         "sprite_path": "images/sprites/52.gif",
         "footprint_path": "images/footprints/52.png",
+        "cry_path": "sounds/cries/52.ogg",
     },
     "053": {
         "name": "Persian",
@@ -549,6 +601,7 @@ dico_pokemon = {
         "description": "Il est très élégant et agile. Les guerriers de la haute société le prennent souvent comme animal de compagnie.",
         "sprite_path": "images/sprites/53.gif",
         "footprint_path": "images/footprints/53.png",
+        "cry_path": "sounds/cries/53.ogg",
     },
     "054": {
         "name": "Psykokwak",
@@ -559,6 +612,7 @@ dico_pokemon = {
         "description": "Il souffre constamment de maux de tête, et quand ils s’intensifient, il libère une puissante onde psychique.",
         "sprite_path": "images/sprites/54.gif",
         "footprint_path": "images/footprints/54.png",
+        "cry_path": "sounds/cries/54.ogg",
     },
     "055": {
         "name": "Akwakwak",
@@ -569,6 +623,7 @@ dico_pokemon = {
         "description": "Son bec peut libérer une énergie psychique dévastatrice quand ses maux de tête deviennent intenses.",
         "sprite_path": "images/sprites/55.gif",
         "footprint_path": "images/footprints/55.png",
+        "cry_path": "sounds/cries/55.ogg",
     },
     "056": {
         "name": "Férosinge",
@@ -579,6 +634,7 @@ dico_pokemon = {
         "description": "Il se met en colère très facilement. Une fois énervé, il frappe tout ce qui bouge avec ses poings puissants.",
         "sprite_path": "images/sprites/56.gif",
         "footprint_path": "images/footprints/56.png",
+        "cry_path": "sounds/cries/56.ogg",
     },
     "057": {
         "name": "Colossinge",
@@ -589,6 +645,7 @@ dico_pokemon = {
         "description": "Sa puissance de frappe est légendaire. Il peut facilement renverser des arbres et creuser des trous avec ses poings.",
         "sprite_path": "images/sprites/57.gif",
         "footprint_path": "images/footprints/57.png",
+        "cry_path": "sounds/cries/57.ogg",
     },
     "058": {
         "name": "Caninos",
@@ -599,6 +656,7 @@ dico_pokemon = {
         "description": "Il a une flamme vive sur sa queue qui s’agite selon son humeur. Plus la flamme est vive, plus il est en forme.",
         "sprite_path": "images/sprites/58.gif",
         "footprint_path": "images/footprints/58.png",
+        "cry_path": "sounds/cries/58.ogg",
     },
     "059": {
         "name": "Arcanin",
@@ -609,6 +667,7 @@ dico_pokemon = {
         "description": "Il court à une vitesse fulgurante. Même les voitures ne peuvent pas le rattraper sur de longues distances.",
         "sprite_path": "images/sprites/59.gif",
         "footprint_path": "images/footprints/59.png",
+        "cry_path": "sounds/cries/59.ogg",
     },
     "060": {
         "name": "Ptitard",
@@ -619,6 +678,7 @@ dico_pokemon = {
         "description": "Il vit près de l’eau et se déplace lentement. Son cri aigu alerte ses amis en cas de danger.",
         "sprite_path": "images/sprites/60.gif",
         "footprint_path": "images/footprints/60.png",
+        "cry_path": "sounds/cries/60.ogg",
     },
     "061": {
         "name": "Têtarte",
@@ -629,6 +689,7 @@ dico_pokemon = {
         "description": "La boule sur sa tête contient un liquide mystérieux qui peut amplifier ses pouvoirs.",
         "sprite_path": "images/sprites/61.gif",
         "footprint_path": "images/footprints/61.png",
+        "cry_path": "sounds/cries/61.ogg",
     },
     "062": {
         "name": "Tartard",
@@ -639,6 +700,7 @@ dico_pokemon = {
         "description": "Son corps musclé et ses jambes puissantes lui permettent de délivrer des coups d’une force extraordinaire.",
         "sprite_path": "images/sprites/62.gif",
         "footprint_path": "images/footprints/62.png",
+        "cry_path": "sounds/cries/62.ogg",
     },
     "063": {
         "name": "Abra",
@@ -649,6 +711,7 @@ dico_pokemon = {
         "description": "Il passe la plupart de son temps à dormir. S’il est menacé, il se téléporte instantanément pour fuir.",
         "sprite_path": "images/sprites/63.gif",
         "footprint_path": "images/footprints/63.png",
+        "cry_path": "sounds/cries/63.ogg",
     },
     "064": {
         "name": "Kadabra",
@@ -659,6 +722,7 @@ dico_pokemon = {
         "description": "Il maîtrise des pouvoirs psychiques puissants et peut bouger des objets par la force de l’esprit.",
         "sprite_path": "images/sprites/64.gif",
         "footprint_path": "images/footprints/64.png",
+        "cry_path": "sounds/cries/64.ogg",
     },
     "065": {
         "name": "Alakazam",
@@ -669,6 +733,7 @@ dico_pokemon = {
         "description": "Son quotient intellectuel est si élevé qu’il peut résoudre n’importe quel problème. Ses pouvoirs psychiques sont exceptionnels.",
         "sprite_path": "images/sprites/65.gif",
         "footprint_path": "images/footprints/65.png",
+        "cry_path": "sounds/cries/65.ogg",
     },
     "066": {
         "name": "Machoc",
@@ -679,6 +744,7 @@ dico_pokemon = {
         "description": "Malgré sa petite taille, il possède une force phénoménale et adore s’entraîner pour devenir encore plus fort.",
         "sprite_path": "images/sprites/66.gif",
         "footprint_path": "images/footprints/66.png",
+        "cry_path": "sounds/cries/66.ogg",
     },
     "067": {
         "name": "Machopeur",
@@ -689,6 +755,7 @@ dico_pokemon = {
         "description": "Il adore les combats physiques. Sa force brute lui permet de soulever facilement de lourdes charges.",
         "sprite_path": "images/sprites/67.gif",
         "footprint_path": "images/footprints/67.png",
+        "cry_path": "sounds/cries/67.ogg",
     },
     "068": {
         "name": "Mackogneur",
@@ -699,6 +766,7 @@ dico_pokemon = {
         "description": "C’est un véritable champion de combat. Il peut détruire des rochers et des arbres d’un seul coup de poing.",
         "sprite_path": "images/sprites/68.gif",
         "footprint_path": "images/footprints/68.png",
+        "cry_path": "sounds/cries/68.ogg",
     },
     "069": {
         "name": "Chétiflor",
@@ -709,6 +777,7 @@ dico_pokemon = {
         "description": "La fleur sur sa tête absorbe les rayons du soleil et libère des spores pour se défendre.",
         "sprite_path": "images/sprites/69.gif",
         "footprint_path": "images/footprints/69.png",
+        "cry_path": "sounds/cries/69.ogg",
     },
     "070": {
         "name": "Boustiflor",
@@ -719,6 +788,7 @@ dico_pokemon = {
         "description": "Ses crochets et ses feuilles peuvent trancher comme des lames, et il repousse ses ennemis avec des spores toxiques.",
         "sprite_path": "images/sprites/70.gif",
         "footprint_path": "images/footprints/70.png",
+        "cry_path": "sounds/cries/70.ogg",
     },
     "071": {
         "name": "Empiflor",
@@ -729,6 +799,7 @@ dico_pokemon = {
         "description": "Sa grande fleur absorbe l’énergie solaire pour lancer des attaques puissantes et épuiser ses adversaires.",
         "sprite_path": "images/sprites/71.gif",
         "footprint_path": "images/footprints/71.png",
+        "cry_path": "sounds/cries/71.ogg",
     },
     "072": {
         "name": "Tentacool",
@@ -739,6 +810,7 @@ dico_pokemon = {
         "description": "Ses tentacules contiennent du poison capable de paralyser ses ennemis. Il flotte dans l’eau à la recherche de proies.",
         "sprite_path": "images/sprites/72.gif",
         "footprint_path": "images/footprints/72.png",
+        "cry_path": "sounds/cries/72.ogg",
     },
     "073": {
         "name": "Tentacruel",
@@ -749,6 +821,7 @@ dico_pokemon = {
         "description": "Ses nombreux tentacules peuvent encercler et neutraliser ses ennemis. Son poison est extrêmement puissant.",
         "sprite_path": "images/sprites/73.gif",
         "footprint_path": "images/footprints/73.png",
+        "cry_path": "sounds/cries/73.ogg",
     },
     "074": {
         "name": "Racaillou",
@@ -759,6 +832,7 @@ dico_pokemon = {
         "description": "Il se cache dans les montagnes et utilise sa dure carapace pour se protéger des attaques.",
         "sprite_path": "images/sprites/74.gif",
         "footprint_path": "images/footprints/74.png",
+        "cry_path": "sounds/cries/74.ogg",
     },
     "075": {
         "name": "Gravalanch",
@@ -769,6 +843,7 @@ dico_pokemon = {
         "description": "Il roule sur ses ennemis pour les écraser, utilisant sa lourde masse de pierre pour attaquer.",
         "sprite_path": "images/sprites/75.gif",
         "footprint_path": "images/footprints/75.png",
+        "cry_path": "sounds/cries/75.ogg",
     },
     "076": {
         "name": "Grolem",
@@ -779,6 +854,7 @@ dico_pokemon = {
         "description": "Sa peau de pierre le rend presque invincible. Il peut rouler à grande vitesse pour foncer sur ses ennemis.",
         "sprite_path": "images/sprites/76.gif",
         "footprint_path": "images/footprints/76.png",
+        "cry_path": "sounds/cries/76.ogg",
     },
     "077": {
         "name": "Ponyta",
@@ -789,6 +865,7 @@ dico_pokemon = {
         "description": "La flamme sur sa crinière brûle toujours vivement. Il peut courir à des vitesses étonnantes.",
         "sprite_path": "images/sprites/77.gif",
         "footprint_path": "images/footprints/77.png",
+        "cry_path": "sounds/cries/77.ogg",
     },
     "078": {
         "name": "Galopa",
@@ -799,6 +876,7 @@ dico_pokemon = {
         "description": "Sa crinière et sa queue sont des flammes ardentes. Il est capable de courir plus vite que n’importe quel autre Pokémon.",
         "sprite_path": "images/sprites/78.gif",
         "footprint_path": "images/footprints/78.png",
+        "cry_path": "sounds/cries/78.ogg",
     },
     "079": {
         "name": "Ramoloss",
@@ -809,6 +887,7 @@ dico_pokemon = {
         "description": "Toujours dans un état de rêverie, il est incroyablement lent mais peut utiliser ses pouvoirs psychiques malgré tout.",
         "sprite_path": "images/sprites/79.gif",
         "footprint_path": "images/footprints/79.png",
+        "cry_path": "sounds/cries/79.ogg",
     },
     "080": {
         "name": "Flagadoss",
@@ -819,6 +898,7 @@ dico_pokemon = {
         "description": "Il est extrêmement lent et oublie souvent ce qui se passe autour de lui. Ses pouvoirs psychiques restent néanmoins puissants.",
         "sprite_path": "images/sprites/80.gif",
         "footprint_path": "images/footprints/80.png",
+        "cry_path": "sounds/cries/80.ogg",
     },
     "081": {
         "name": "Magnéti",
@@ -829,6 +909,7 @@ dico_pokemon = {
         "description": "Il se déplace en flottant grâce à son puissant champ magnétique et attire les objets métalliques autour de lui.",
         "sprite_path": "images/sprites/81.gif",
         "footprint_path": "images/footprints/81.png",
+        "cry_path": "sounds/cries/81.ogg",
     },
     "082": {
         "name": "Magnéton",
@@ -839,16 +920,18 @@ dico_pokemon = {
         "description": "Il est formé de trois Magnéti réunis. Il génère un champ magnétique extrêmement puissant.",
         "sprite_path": "images/sprites/82.gif",
         "footprint_path": "images/footprints/82.png",
+        "cry_path": "sounds/cries/82.ogg",
     },
     "083": {
         "name": "Canarticho",
-        "types": ["normal", "combat"],
+        "types": ["normal", "vol"],
         "size": "1.5",
         "weight": "78.2",
         "species": "Pokémon Canard",
         "description": "Son bec peut infliger des coups puissants. Il est très agile malgré sa taille.",
         "sprite_path": "images/sprites/83.gif",
         "footprint_path": "images/footprints/83.png",
+        "cry_path": "sounds/cries/83.ogg",
     },
     "084": {
         "name": "Doduo",
@@ -859,6 +942,7 @@ dico_pokemon = {
         "description": "Il possède deux têtes et peut courir extrêmement vite pour échapper aux prédateurs.",
         "sprite_path": "images/sprites/84.gif",
         "footprint_path": "images/footprints/84.png",
+        "cry_path": "sounds/cries/84.ogg",
     },
     "085": {
         "name": "Dodrio",
@@ -869,6 +953,7 @@ dico_pokemon = {
         "description": "Il possède trois têtes et peut courir à grande vitesse. Ses attaques sont coordonnées entre ses trois cerveaux.",
         "sprite_path": "images/sprites/85.gif",
         "footprint_path": "images/footprints/85.png",
+        "cry_path": "sounds/cries/85.ogg",
     },
     "086": {
         "name": "Otaria",
@@ -879,6 +964,7 @@ dico_pokemon = {
         "description": "Elle aime jouer dans l’eau. Son corps est puissant et lui permet de nager rapidement pour échapper aux prédateurs.",
         "sprite_path": "images/sprites/86.gif",
         "footprint_path": "images/footprints/86.png",
+        "cry_path": "sounds/cries/86.ogg",
     },
     "087": {
         "name": "Lamantine",
@@ -889,6 +975,7 @@ dico_pokemon = {
         "description": "Elle nage paisiblement dans les océans. Sa force physique est surprenante malgré son apparence douce.",
         "sprite_path": "images/sprites/87.gif",
         "footprint_path": "images/footprints/87.png",
+        "cry_path": "sounds/cries/87.ogg",
     },
     "088": {
         "name": "Tadmorv",
@@ -899,6 +986,7 @@ dico_pokemon = {
         "description": "Son corps est entièrement constitué de boue toxique. Il s’étale sur le sol pour attaquer ou se défendre.",
         "sprite_path": "images/sprites/88.gif",
         "footprint_path": "images/footprints/88.png",
+        "cry_path": "sounds/cries/88.ogg",
     },
     "089": {
         "name": "Grotadmorv",
@@ -909,6 +997,7 @@ dico_pokemon = {
         "description": "Il dégage une odeur extrêmement nauséabonde qui peut paralyser ses ennemis. Son corps est très résistant.",
         "sprite_path": "images/sprites/89.gif",
         "footprint_path": "images/footprints/89.png",
+        "cry_path": "sounds/cries/89.ogg",
     },
     "090": {
         "name": "Kokiyas",
@@ -919,6 +1008,7 @@ dico_pokemon = {
         "description": "Sa coquille est dure et protège ses parties molles. Il se referme dès qu’il est menacé.",
         "sprite_path": "images/sprites/90.gif",
         "footprint_path": "images/footprints/90.png",
+        "cry_path": "sounds/cries/90.ogg",
     },
     "091": {
         "name": "Crustabri",
@@ -929,6 +1019,7 @@ dico_pokemon = {
         "description": "Sa carapace est extrêmement dure. Ses pinces peuvent broyer la pierre et attraper ses proies.",
         "sprite_path": "images/sprites/91.gif",
         "footprint_path": "images/footprints/91.png",
+        "cry_path": "sounds/cries/91.ogg",
     },
     "092": {
         "name": "Fantominus",
@@ -939,6 +1030,7 @@ dico_pokemon = {
         "description": "Il peut passer à travers les murs et émettre un gaz toxique pour effrayer ou affaiblir ses ennemis.",
         "sprite_path": "images/sprites/92.gif",
         "footprint_path": "images/footprints/92.png",
+        "cry_path": "sounds/cries/92.ogg",
     },
     "093": {
         "name": "Spectrum",
@@ -949,6 +1041,7 @@ dico_pokemon = {
         "description": "Il est constitué d’énergie spectrale. Il peut disparaître et apparaître à volonté pour effrayer ses proies.",
         "sprite_path": "images/sprites/93.gif",
         "footprint_path": "images/footprints/93.png",
+        "cry_path": "sounds/cries/93.ogg",
     },
     "094": {
         "name": "Ectoplasma",
@@ -959,6 +1052,7 @@ dico_pokemon = {
         "description": "Il peut traverser n’importe quel obstacle et libérer des gaz toxiques. Il est redoutable dans les combats.",
         "sprite_path": "images/sprites/94.gif",
         "footprint_path": "images/footprints/94.png",
+        "cry_path": "sounds/cries/94.ogg",
     },
     "095": {
         "name": "Onix",
@@ -969,6 +1063,7 @@ dico_pokemon = {
         "description": "Un Pokémon énorme fait de roches reliées entre elles. Il peut creuser des tunnels et écraser ses ennemis.",
         "sprite_path": "images/sprites/95.gif",
         "footprint_path": "images/footprints/95.png",
+        "cry_path": "sounds/cries/95.ogg",
     },
     "096": {
         "name": "Soporifik",
@@ -979,6 +1074,7 @@ dico_pokemon = {
         "description": "Il utilise ses pouvoirs psychiques pour endormir ses adversaires et profiter de la situation pour attaquer.",
         "sprite_path": "images/sprites/96.gif",
         "footprint_path": "images/footprints/96.png",
+        "cry_path": "sounds/cries/96.ogg",
     },
     "097": {
         "name": "Hypnomade",
@@ -989,6 +1085,7 @@ dico_pokemon = {
         "description": "Il secoue son pendule pour endormir ses ennemis et les manipuler à sa guise.",
         "sprite_path": "images/sprites/97.gif",
         "footprint_path": "images/footprints/97.png",
+        "cry_path": "sounds/cries/97.ogg",
     },
     "098": {
         "name": "Krabby",
@@ -999,6 +1096,7 @@ dico_pokemon = {
         "description": "Ses pinces puissantes peuvent briser les coquilles et la roche. Il se déplace latéralement très vite.",
         "sprite_path": "images/sprites/98.gif",
         "footprint_path": "images/footprints/98.png",
+        "cry_path": "sounds/cries/98.ogg",
     },
     "099": {
         "name": "Krabboss",
@@ -1009,6 +1107,7 @@ dico_pokemon = {
         "description": "Sa pince droite est beaucoup plus grande et très puissante. Il peut écraser ses proies avec une force incroyable.",
         "sprite_path": "images/sprites/99.gif",
         "footprint_path": "images/footprints/99.png",
+        "cry_path": "sounds/cries/99.ogg",
     },
     "100": {
         "name": "Voltorbe",
@@ -1019,6 +1118,7 @@ dico_pokemon = {
         "description": "Il ressemble à une Pokéball mais peut exploser à tout moment. Il est très instable et dangereux.",
         "sprite_path": "images/sprites/100.gif",
         "footprint_path": "images/footprints/100.png",
+        "cry_path": "sounds/cries/100.ogg",
     },
     "101": {
         "name": "Électrode",
@@ -1029,26 +1129,29 @@ dico_pokemon = {
         "description": "Comme Voltorbe, il peut exploser à tout moment. Son corps est entièrement chargé d’électricité.",
         "sprite_path": "images/sprites/101.gif",
         "footprint_path": "images/footprints/101.png",
+        "cry_path": "sounds/cries/101.ogg",
     },
     "102": {
         "name": "Noeunoeuf",
-        "types": ["normal"],
+        "types": ["plante", "psy"],
         "size": "0.4",
         "weight": "7.5",
         "species": "Pokémon Œuf",
         "description": "Il passe toute sa vie à l’intérieur de son œuf. Ses mouvements sont limités mais il absorbe beaucoup de nutriments.",
         "sprite_path": "images/sprites/102.gif",
         "footprint_path": "images/footprints/102.png",
+        "cry_path": "sounds/cries/102.ogg",
     },
     "103": {
         "name": "Noadkoko",
-        "types": ["plante", "vol"],
+        "types": ["plante", "psy"],
         "size": "2.0",
         "weight": "80.0",
         "species": "Pokémon Palmier",
         "description": "Il porte un grand corps et plusieurs œufs sur sa tête. Les œufs tombent parfois sur ses ennemis.",
         "sprite_path": "images/sprites/103.gif",
         "footprint_path": "images/footprints/103.png",
+        "cry_path": "sounds/cries/103.ogg",
     },
     "104": {
         "name": "Osselait",
@@ -1059,6 +1162,7 @@ dico_pokemon = {
         "description": "Son os est dur et solide. Il le mâche pour s’entraîner et pour se défendre.",
         "sprite_path": "images/sprites/104.gif",
         "footprint_path": "images/footprints/104.png",
+        "cry_path": "sounds/cries/104.ogg",
     },
     "105": {
         "name": "Ossatueur",
@@ -1069,6 +1173,7 @@ dico_pokemon = {
         "description": "Son os est utilisé comme arme. Il peut le lancer avec précision pour attaquer à distance.",
         "sprite_path": "images/sprites/105.gif",
         "footprint_path": "images/footprints/105.png",
+        "cry_path": "sounds/cries/105.ogg",
     },
     "106": {
         "name": "Kicklee",
@@ -1079,6 +1184,7 @@ dico_pokemon = {
         "description": "Spécialiste des coups de pied, il peut frapper avec une vitesse incroyable et renverser ses adversaires.",
         "sprite_path": "images/sprites/106.gif",
         "footprint_path": "images/footprints/106.png",
+        "cry_path": "sounds/cries/106.ogg",
     },
     "107": {
         "name": "Tygnon",
@@ -1089,6 +1195,7 @@ dico_pokemon = {
         "description": "Ses poings sont puissants et précis. Il s’entraîne constamment pour augmenter sa force.",
         "sprite_path": "images/sprites/107.gif",
         "footprint_path": "images/footprints/107.png",
+        "cry_path": "sounds/cries/107.ogg",
     },
     "108": {
         "name": "Excelangue",
@@ -1099,6 +1206,7 @@ dico_pokemon = {
         "description": "Sa langue extrêmement longue lui permet d’attaquer et d’attraper des objets à distance.",
         "sprite_path": "images/sprites/108.gif",
         "footprint_path": "images/footprints/108.png",
+        "cry_path": "sounds/cries/108.ogg",
     },
     "109": {
         "name": "Smogo",
@@ -1109,6 +1217,7 @@ dico_pokemon = {
         "description": "Il libère un gaz toxique pour se défendre. L’inhalation de son nuage peut rendre malade.",
         "sprite_path": "images/sprites/109.gif",
         "footprint_path": "images/footprints/109.png",
+        "cry_path": "sounds/cries/109.ogg",
     },
     "110": {
         "name": "Smogogo",
@@ -1119,6 +1228,7 @@ dico_pokemon = {
         "description": "Son corps entier produit du gaz toxique. Il peut créer un nuage étouffant pour attaquer.",
         "sprite_path": "images/sprites/110.gif",
         "footprint_path": "images/footprints/110.png",
+        "cry_path": "sounds/cries/110.ogg",
     },
     "111": {
         "name": "Rhinocorne",
@@ -1129,6 +1239,7 @@ dico_pokemon = {
         "description": "Son corps lourd et ses cornes lui permettent de charger avec force ses ennemis et écraser tout sur son passage.",
         "sprite_path": "images/sprites/111.gif",
         "footprint_path": "images/footprints/111.png",
+        "cry_path": "sounds/cries/111.ogg",
     },
     "112": {
         "name": "Rhinoféros",
@@ -1139,6 +1250,7 @@ dico_pokemon = {
         "description": "Il utilise ses cornes et sa puissance pour détruire tout obstacle. Très résistant, il est redoutable en combat.",
         "sprite_path": "images/sprites/112.gif",
         "footprint_path": "images/footprints/112.png",
+        "cry_path": "sounds/cries/112.ogg",
     },
     "113": {
         "name": "Leveinard",
@@ -1149,6 +1261,7 @@ dico_pokemon = {
         "description": "Il porte un œuf chanceux sur son ventre et apporte la bonne fortune. Il protège son œuf avec soin.",
         "sprite_path": "images/sprites/113.gif",
         "footprint_path": "images/footprints/113.png",
+        "cry_path": "sounds/cries/113.ogg",
     },
     "114": {
         "name": "Saquedeneu",
@@ -1159,6 +1272,7 @@ dico_pokemon = {
         "description": "Il absorbe la lumière du soleil pour nourrir la fleur sur son dos. Il reste souvent immobile.",
         "sprite_path": "images/sprites/114.gif",
         "footprint_path": "images/footprints/114.png",
+        "cry_path": "sounds/cries/114.ogg",
     },
     "115": {
         "name": "Kangourex",
@@ -1169,6 +1283,7 @@ dico_pokemon = {
         "description": "Il transporte son petit dans sa poche ventrale et bondit puissamment pour se défendre ou chasser.",
         "sprite_path": "images/sprites/115.gif",
         "footprint_path": "images/footprints/115.png",
+        "cry_path": "sounds/cries/115.ogg",
     },
     "116": {
         "name": "Hypotrempe",
@@ -1179,6 +1294,7 @@ dico_pokemon = {
         "description": "Bien que petit, il est agile et vit près des cours d’eau. Ses nageoires sont souples et rapides.",
         "sprite_path": "images/sprites/116.gif",
         "footprint_path": "images/footprints/116.png",
+        "cry_path": "sounds/cries/116.ogg",
     },
     "117": {
         "name": "Hypocéan",
@@ -1189,6 +1305,7 @@ dico_pokemon = {
         "description": "Il a grandi depuis Hypotrempe. Il nage rapidement et attaque ses proies avec force.",
         "sprite_path": "images/sprites/117.gif",
         "footprint_path": "images/footprints/117.png",
+        "cry_path": "sounds/cries/117.ogg",
     },
     "118": {
         "name": "Poissirène",
@@ -1199,6 +1316,7 @@ dico_pokemon = {
         "description": "Cette petite sirène est rapide et gracieuse dans l’eau. Son chant attire parfois les prédateurs.",
         "sprite_path": "images/sprites/118.gif",
         "footprint_path": "images/footprints/118.png",
+        "cry_path": "sounds/cries/118.ogg",
     },
     "119": {
         "name": "Poissoroy",
@@ -1209,6 +1327,7 @@ dico_pokemon = {
         "description": "Il règne sur les eaux. Ses nageoires puissantes lui permettent de se déplacer avec rapidité et force.",
         "sprite_path": "images/sprites/119.gif",
         "footprint_path": "images/footprints/119.png",
+        "cry_path": "sounds/cries/119.ogg",
     },
     "120": {
         "name": "Stari",
@@ -1219,6 +1338,7 @@ dico_pokemon = {
         "description": "Il se déplace lentement sur le fond marin. Ses bras sont fragiles mais très sensibles au toucher.",
         "sprite_path": "images/sprites/120.gif",
         "footprint_path": "images/footprints/120.png",
+        "cry_path": "sounds/cries/120.ogg",
     },
     "121": {
         "name": "Staross",
@@ -1229,6 +1349,7 @@ dico_pokemon = {
         "description": "Ce Pokémon étoilé absorbe l’énergie de l’eau et de la lumière pour libérer des ondes puissantes.",
         "sprite_path": "images/sprites/121.gif",
         "footprint_path": "images/footprints/121.png",
+        "cry_path": "sounds/cries/121.ogg",
     },
     "122": {
         "name": "M. Mime",
@@ -1239,6 +1360,7 @@ dico_pokemon = {
         "description": "Il mime des actions irréelles pour perturber ses ennemis et crée des barrières invisibles.",
         "sprite_path": "images/sprites/122.gif",
         "footprint_path": "images/footprints/122.png",
+        "cry_path": "sounds/cries/122.ogg",
     },
     "123": {
         "name": "Insécateur",
@@ -1249,6 +1371,7 @@ dico_pokemon = {
         "description": "Bondissant hors de l’herbe comme un ninja, il lacère sa proie avec ses griffes affûtées.",
         "sprite_path": "images/sprites/123.gif",
         "footprint_path": "images/footprints/123.png",
+        "cry_path": "sounds/cries/123.ogg",
     },
     "124": {
         "name": "Lippoutou",
@@ -1259,6 +1382,7 @@ dico_pokemon = {
         "description": "Ses mouvements ressemblent à une danse gracieuse, mais il frappe avec des attaques glaciales redoutables.",
         "sprite_path": "images/sprites/124.gif",
         "footprint_path": "images/footprints/124.png",
+        "cry_path": "sounds/cries/124.ogg",
     },
     "125": {
         "name": "Élektek",
@@ -1269,6 +1393,7 @@ dico_pokemon = {
         "description": "Il provoque souvent des pannes en absorbant l’électricité ambiante et en la relâchant en décharges.",
         "sprite_path": "images/sprites/125.gif",
         "footprint_path": "images/footprints/125.png",
+        "cry_path": "sounds/cries/125.ogg",
     },
     "126": {
         "name": "Magmar",
@@ -1279,6 +1404,7 @@ dico_pokemon = {
         "description": "Né dans des volcans en fusion, son corps est enveloppé de flammes brûlantes et ardentes.",
         "sprite_path": "images/sprites/126.gif",
         "footprint_path": "images/footprints/126.png",
+        "cry_path": "sounds/cries/126.ogg",
     },
     "127": {
         "name": "Scarabrute",
@@ -1289,6 +1415,7 @@ dico_pokemon = {
         "description": "Puissant et agressif, il utilise ses grandes pinces pour écraser ses adversaires.",
         "sprite_path": "images/sprites/127.gif",
         "footprint_path": "images/footprints/127.png",
+        "cry_path": "sounds/cries/127.ogg",
     },
     "128": {
         "name": "Tauros",
@@ -1299,6 +1426,7 @@ dico_pokemon = {
         "description": "Très agité, il charge à toute vitesse et utilise sa force brute pour renverser tout sur son passage.",
         "sprite_path": "images/sprites/128.gif",
         "footprint_path": "images/footprints/128.png",
+        "cry_path": "sounds/cries/128.ogg",
     },
     "129": {
         "name": "Magicarpe",
@@ -1309,6 +1437,7 @@ dico_pokemon = {
         "description": "Virtuellement inutile hors de l’eau, il est célèbre pour être l’un des Pokémon les plus faibles.",
         "sprite_path": "images/sprites/129.gif",
         "footprint_path": "images/footprints/129.png",
+        "cry_path": "sounds/cries/129.ogg",
     },
     "130": {
         "name": "Léviator",
@@ -1319,6 +1448,7 @@ dico_pokemon = {
         "description": "D’une nature très agressive, il crache des jets d’eau puissants et attaque sans pitié.",
         "sprite_path": "images/sprites/130.gif",
         "footprint_path": "images/footprints/130.png",
+        "cry_path": "sounds/cries/130.ogg",
     },
     "131": {
         "name": "Lokhlass",
@@ -1329,6 +1459,7 @@ dico_pokemon = {
         "description": "Bon nageur, il transporte les voyageurs sur son dos à travers de longues distances.",
         "sprite_path": "images/sprites/131.gif",
         "footprint_path": "images/footprints/131.png",
+        "cry_path": "sounds/cries/131.ogg",
     },
     "132": {
         "name": "Métamorph",
@@ -1339,6 +1470,7 @@ dico_pokemon = {
         "description": "Il peut reconstituer sa structure cellulaire pour imiter presque n’importe quel Pokémon.",
         "sprite_path": "images/sprites/132.gif",
         "footprint_path": "images/footprints/132.png",
+        "cry_path": "sounds/cries/132.ogg",
     },
     "133": {
         "name": "Évoli",
@@ -1349,6 +1481,7 @@ dico_pokemon = {
         "description": "Son corps possède une flexibilité qui lui permet d’évoluer en plusieurs formes différentes.",
         "sprite_path": "images/sprites/133.gif",
         "footprint_path": "images/footprints/133.png",
+        "cry_path": "sounds/cries/133.ogg",
     },
     "134": {
         "name": "Aquali",
@@ -1359,6 +1492,7 @@ dico_pokemon = {
         "description": "Ses nageoires permettent de nager gracieusement et annoncent parfois l’arrivée de la pluie.",
         "sprite_path": "images/sprites/134.gif",
         "footprint_path": "images/footprints/134.png",
+        "cry_path": "sounds/cries/134.ogg",
     },
     "135": {
         "name": "Voltali",
@@ -1369,6 +1503,7 @@ dico_pokemon = {
         "description": "Si on le surprend ou le stimule, ses poils se hérissent comme des aiguilles chargées.",
         "sprite_path": "images/sprites/135.gif",
         "footprint_path": "images/footprints/135.png",
+        "cry_path": "sounds/cries/135.ogg",
     },
     "136": {
         "name": "Pyroli",
@@ -1379,6 +1514,7 @@ dico_pokemon = {
         "description": "Son corps peut atteindre des températures très élevées lorsqu’il stocke de la chaleur.",
         "sprite_path": "images/sprites/136.gif",
         "footprint_path": "images/footprints/136.png",
+        "cry_path": "sounds/cries/136.ogg",
     },
     "137": {
         "name": "Porygon",
@@ -1389,6 +1525,7 @@ dico_pokemon = {
         "description": "Créé par ordinateur, il explore des mondes numériques et s’adapte à différents systèmes.",
         "sprite_path": "images/sprites/137.gif",
         "footprint_path": "images/footprints/137.png",
+        "cry_path": "sounds/cries/137.ogg",
     },
     "138": {
         "name": "Amonita",
@@ -1399,6 +1536,7 @@ dico_pokemon = {
         "description": "Ce fossile ancien est devenu un Pokémon vivant après sa restauration.",
         "sprite_path": "images/sprites/138.gif",
         "footprint_path": "images/footprints/138.png",
+        "cry_path": "sounds/cries/138.ogg",
     },
     "139": {
         "name": "Amonistar",
@@ -1409,6 +1547,7 @@ dico_pokemon = {
         "description": "Sa grande coquille lui permet de nager lentement et de capturer des proies avec ses tentacules.",
         "sprite_path": "images/sprites/139.gif",
         "footprint_path": "images/footprints/139.png",
+        "cry_path": "sounds/cries/139.ogg",
     },
     "140": {
         "name": "Kabuto",
@@ -1419,6 +1558,7 @@ dico_pokemon = {
         "description": "Ce fossile ancien est devenu un Pokémon vivant après sa restauration. Il nage rapidement pour capturer ses proies.",
         "sprite_path": "images/sprites/140.gif",
         "footprint_path": "images/footprints/140.png",
+        "cry_path": "sounds/cries/140.ogg",
     },
     "141": {
         "name": "Kabutops",
@@ -1429,6 +1569,7 @@ dico_pokemon = {
         "description": "Avec ses bras tranchants, il attaque rapidement ses proies et fend tout obstacle sur son passage.",
         "sprite_path": "images/sprites/141.gif",
         "footprint_path": "images/footprints/141.png",
+        "cry_path": "sounds/cries/141.ogg",
     },
     "142": {
         "name": "Ptéra",
@@ -1439,6 +1580,7 @@ dico_pokemon = {
         "description": "Ce Pokémon préhistorique volant domine les cieux et utilise ses serres pour saisir ses proies.",
         "sprite_path": "images/sprites/142.gif",
         "footprint_path": "images/footprints/142.png",
+        "cry_path": "sounds/cries/142.ogg",
     },
     "143": {
         "name": "Ronflex",
@@ -1449,6 +1591,7 @@ dico_pokemon = {
         "description": "Il dort profondément et peut engloutir tout ce qui se trouve sur son chemin. Il se réveille rarement.",
         "sprite_path": "images/sprites/143.gif",
         "footprint_path": "images/footprints/143.png",
+        "cry_path": "sounds/cries/143.ogg",
     },
     "144": {
         "name": "Artikodin",
@@ -1459,6 +1602,7 @@ dico_pokemon = {
         "description": "Un oiseau légendaire qui contrôle la glace. Il apporte le froid glacial lorsqu’il vole.",
         "sprite_path": "images/sprites/144.gif",
         "footprint_path": "images/footprints/144.png",
+        "cry_path": "sounds/cries/144.ogg",
     },
     "145": {
         "name": "Électhor",
@@ -1469,6 +1613,7 @@ dico_pokemon = {
         "description": "Cet oiseau légendaire apparaît lors des tempêtes électriques et peut générer d’énormes éclairs.",
         "sprite_path": "images/sprites/145.gif",
         "footprint_path": "images/footprints/145.png",
+        "cry_path": "sounds/cries/145.ogg",
     },
     "146": {
         "name": "Sulfura",
@@ -1479,6 +1624,7 @@ dico_pokemon = {
         "description": "Oiseau légendaire du feu, il est entouré de flammes et peut enflammer tout ce qui l’entoure.",
         "sprite_path": "images/sprites/146.gif",
         "footprint_path": "images/footprints/146.png",
+        "cry_path": "sounds/cries/146.ogg",
     },
     "147": {
         "name": "Minidraco",
@@ -1489,6 +1635,7 @@ dico_pokemon = {
         "description": "Ce petit dragon est agile et flexible. Il se transforme progressivement en un puissant dragon.",
         "sprite_path": "images/sprites/147.gif",
         "footprint_path": "images/footprints/147.png",
+        "cry_path": "sounds/cries/147.ogg",
     },
     "148": {
         "name": "Draco",
@@ -1499,6 +1646,7 @@ dico_pokemon = {
         "description": "Ce dragon à l’allure majestueuse est très puissant et agile dans les airs et sur la terre ferme.",
         "sprite_path": "images/sprites/148.gif",
         "footprint_path": "images/footprints/148.png",
+        "cry_path": "sounds/cries/148.ogg",
     },
     "149": {
         "name": "Dracolosse",
@@ -1509,6 +1657,7 @@ dico_pokemon = {
         "description": "Dragon légendaire combinant puissance et vitesse, capable de détruire tout obstacle grâce à ses ailes et sa force.",
         "sprite_path": "images/sprites/149.gif",
         "footprint_path": "images/footprints/149.png",
+        "cry_path": "sounds/cries/149.ogg",
     },
     "150": {
         "name": "Mewtwo",
@@ -1519,6 +1668,7 @@ dico_pokemon = {
         "description": "Créé par manipulation génétique, il possède une puissance psychique extraordinaire surpassant tout autre Pokémon.",
         "sprite_path": "images/sprites/150.gif",
         "footprint_path": "images/footprints/150.png",
+        "cry_path": "sounds/cries/150.ogg",
     },
     "151": {
         "name": "Mew",
@@ -1529,5 +1679,6 @@ dico_pokemon = {
         "description": "Ce Pokémon mystérieux contient l’ADN de tous les Pokémon et peut apprendre presque toutes les capacités.",
         "sprite_path": "images/sprites/151.gif",
         "footprint_path": "images/footprints/151.png",
+        "cry_path": "sounds/cries/151.ogg",
     },
 }
