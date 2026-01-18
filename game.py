@@ -3,7 +3,6 @@ import sys
 from PIL import Image, ImageDraw
 from pokedex import dico_pokemon, type_colors
 
-# ---------- UTILITAIRES ----------
 def hex_to_rgb(hex_color):
     hex_color = hex_color.lstrip('#')
     return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
@@ -48,7 +47,6 @@ def draw_multiline_text(surface, text, font, color, x, y, max_width, line_spacin
 def draw_text(surface, text, font, color, x, y):
     surface.blit(font.render(text, True, color), (x, y))
 
-# ---------- INITIALISATION ----------
 pygame.init()
 pygame.font.init()
 pygame.mixer.init()
@@ -66,7 +64,6 @@ pygame.mixer.music.load("sounds/bgm/dreamyard.wav")
 pygame.mixer.music.set_volume(0.3)
 pygame.mixer.music.play(-1)
 
-# ---------- DONNÉES POKÉMON ----------
 pokemon_ids_sorted = sorted(dico_pokemon.keys())
 current_index = 0
 
@@ -102,7 +99,6 @@ grid_surface = pygame.image.fromstring(create_grid_overlay(GRID_WIDTH, WINDOW_HE
                                        (GRID_WIDTH, WINDOW_HEIGHT), "RGBA")
 grid_offset_x, grid_speed = 0, 0.3
 
-# ---------- BOUCLE PRINCIPALE ----------
 running = True
 while running:
     dt = clock.tick(60)
@@ -145,7 +141,6 @@ while running:
     if grid_offset_x <= -WINDOW_WIDTH:
         grid_offset_x = 0
 
-    # ---------- AFFICHAGE ----------
     screen.fill(pokemon['bg_color'])
     screen.blit(grid_surface, (grid_offset_x, 0))
     screen.blit(grid_surface, (grid_offset_x + WINDOW_WIDTH, 0))
