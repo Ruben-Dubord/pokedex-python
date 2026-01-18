@@ -63,6 +63,7 @@ small_font = pygame.font.Font("fonts/pokemon-dppt.ttf", 18)
 
 # Musique de fond
 pygame.mixer.music.load("sounds/bgm/dreamyard.wav")
+pygame.mixer.music.set_volume(0.3)
 pygame.mixer.music.play(-1)
 
 # ---------- DONNÉES POKÉMON ----------
@@ -90,6 +91,7 @@ current_cry = None
 if "cry_path" in pokemon:
     try:
         current_cry = pygame.mixer.Sound(pokemon["cry_path"])
+        current_cry.set_volume(0.2)
         current_cry.play()
     except:
         pass
@@ -127,6 +129,7 @@ while running:
                 try:
                     if "cry_path" in pokemon:
                         current_cry = pygame.mixer.Sound(pokemon["cry_path"])
+                        current_cry.set_volume(0.2)
                         current_cry.play()
                 except:
                     pass
@@ -180,10 +183,35 @@ while running:
 
     # Nom + types
     draw_text(screen, f"•{pokemon_ids_sorted[(current_index)%len(pokemon_ids_sorted)]} {pokemon['name']}", font, (0,0,0), info_x+20, info_y+20)
-    type_x, type_y = info_x+20, info_y+70
+    type_x, type_y = info_x + 20, info_y + 70
+
     for t in pokemon['types']:
-        pygame.draw.rect(screen, hex_to_rgb(type_colors[t]), (type_x, type_y, 80,30), border_radius=5)
-        draw_text(screen, t.upper(), small_font, (0,0,0), type_x+10, type_y+5)
+        rect = pygame.Rect(type_x, type_y, 80, 30)
+
+        # Pastille
+        pygame.draw.rect(
+            screen,
+            hex_to_rgb(type_colors[t]),
+            rect,
+            border_radius=5
+        )
+
+        text = t.upper()
+        text_surface = small_font.render(text, True, (255, 255, 255))  # texte principal
+        text_rect = text_surface.get_rect(center=rect.center)
+
+        # Contour noir
+        outline_color = (0, 0, 0)
+        outline_offsets = [(-1,0), (1,0), (0,-1), (0,1)]
+
+        for ox, oy in outline_offsets:
+            outline_surf = small_font.render(text, True, outline_color)
+            outline_rect = outline_surf.get_rect(center=(text_rect.centerx + ox, text_rect.centery + oy))
+            screen.blit(outline_surf, outline_rect)
+
+        # Texte principal (par-dessus)
+        screen.blit(text_surface, text_rect)
+
         type_x += 90
 
     # Stats
