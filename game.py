@@ -231,7 +231,7 @@ while running:
     desc_panel = pygame.Surface((WINDOW_WIDTH-40, 120), pygame.SRCALPHA)
     desc_panel.fill((0,0,0,180))
     screen.blit(desc_panel, (20, WINDOW_HEIGHT-140))
-    draw_multiline_text(screen, pokemon['description'], font, (255,255,255), 60, WINDOW_HEIGHT-140, WINDOW_WIDTH-100, 5)
+    draw_multiline_text(screen, pokemon['description'], font, (255,255,255), 60, WINDOW_HEIGHT-130, WINDOW_WIDTH-100, 5)
 
     pygame.display.flip()
 
