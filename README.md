@@ -1,33 +1,53 @@
 # Ruben DUBORD BUT3 INF Makémaké - Pokédex en Python
 
-Chef d'oeuvre réalisé en Python avec Pygame et Pillow pour la ressource R506 | Introduction à la Programmation Multimédia
+Chef d’œuvre réalisé en Python avec **Pygame** et **Pillow** pour la ressource **R506 | Introduction à la Programmation Multimédia**.
 
-COMMENT LANCER LE PROJET?
+## Comment lancer le projet ?
 
-Créer un environnement Python contenant Pygame et Pillow:
-    
-(SOUS LINUX)
+### 1. Créer un environnement Python contenant Pygame et Pillow
 
-```python3 -m venv env
-    . env/bin/activate```
+#### Sous Linux
 
-Puis lorsque vous êtes dans votre environnement:
-    ```pip install pygame```
-    ```pip install pillow```
+Créer et activer l’environnement virtuel :
 
-Pour lancer le projet (en étant dans le répertoire du projet et dans l'environnement avec les dépendances):
-    ```python3 game.py```
+```
+python3 -m venv env
+. env/bin/activate
+```
 
+Installer les dépendances :
 
+```
+pip install pygame
+pip install pillow
+```
 
-(SOUS WINDOWS, interpréteur de commande cmd.exe)
+Lancer le projet (depuis le répertoire du projet et dans l'environnement créé) :
 
-```python.exe -m venv env
-env\Scripts\activate.bat```
+```
+python3 game.py
+```
 
-Puis lorsque vous êtes dans votre environnement:
-    ```pip install pygame```
-    ```pip install pillow```
+---
 
-Pour lancer le projet (en étant dans le répertoire du projet et dans l'environnement avec les dépendances):
-    ```python game.py```
+#### Sous Windows (interpréteur de commande `cmd.exe`)
+
+Créer et activer l’environnement virtuel :
+
+```
+python.exe -m venv env
+env\Scripts\activate.bat
+```
+
+Installer les dépendances :
+
+```
+pip install pygame
+pip install pillow
+```
+
+Lancer le projet (depuis le répertoire du projet et dans l'environnement créé) :
+
+```
+python game.py
+```
