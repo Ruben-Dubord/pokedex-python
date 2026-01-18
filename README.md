@@ -4,7 +4,7 @@ Chef d’œuvre réalisé en Python avec **Pygame** et **Pillow** pour la ressou
 
 ## Comment lancer le projet ?
 
-### 1. Créer un environnement Python contenant Pygame et Pillow
+### Créer un environnement Python contenant Pygame et Pillow
 
 #### Sous Linux
 
