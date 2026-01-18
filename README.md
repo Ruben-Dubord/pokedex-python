@@ -51,3 +51,7 @@ Lancer le projet (depuis le répertoire du projet et dans l'environnement créé
 ```
 python game.py
 ```
+
+## Comment naviguer ?
+
+Il suffit tout simplement d'utiliser les flèches droite et gauche du clavier pour changer de Pokémon à observer.
