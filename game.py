@@ -3,13 +3,13 @@ import sys
 from PIL import Image, ImageDraw
 from pokedex import dico_pokemon, type_colors
 
-def hex_to_rgb(hex_color):
-    hex_color = hex_color.lstrip('#')
-    return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
-
 def mix_colors(colors):
     n = len(colors)
-    return (sum(c[0] for c in colors)//n, sum(c[1] for c in colors)//n, sum(c[2] for c in colors)//n)
+    return (
+        sum(c.r for c in colors)//n,
+        sum(c.g for c in colors)//n,
+        sum(c.b for c in colors)//n
+    )
 
 def create_grid_overlay(width, height, spacing=20, alpha=40):
     img = Image.new("RGBA", (width, height), (0,0,0,0))
@@ -32,20 +32,25 @@ def load_gif(path):
 
 def draw_multiline_text(surface, text, font, color, x, y, max_width, line_spacing=5):
     words = text.split(' ')
-    line, line_y = '', y
-    for word in words:
-        test_line = line + word + ' '
-        if font.size(test_line)[0] > max_width:
-            surface.blit(font.render(line, True, color), (x, line_y))
-            line = word + ' '
-            line_y += font.size(line)[1] + line_spacing
-        else:
-            line = test_line
-    if line:
-        surface.blit(font.render(line, True, color), (x, line_y))
+    line_words = []
+    line_y = y
 
-def draw_text(surface, text, font, color, x, y):
-    surface.blit(font.render(text, True, color), (x, y))
+    for word in words:
+        line_words.append(word)
+        test_line = ' '.join(line_words)
+        line_width, line_height = font.size(test_line)
+        if line_width > max_width:
+            # Affiche la ligne précédente sans le mot qui déborde
+            line_words.pop()
+            rendered_line = ' '.join(line_words)
+            surface.blit(font.render(rendered_line, True, color), (x, line_y))
+            line_y += line_height + line_spacing
+            # Commence une nouvelle ligne avec le mot qui déborde
+            line_words = [word]
+
+    if line_words:
+        rendered_line = ' '.join(line_words)
+        surface.blit(font.render(rendered_line, True, color), (x, line_y))
 
 pygame.init()
 pygame.font.init()
@@ -69,14 +74,11 @@ current_index = 0
 
 def load_pokemon(pokemon_id):
     p = dico_pokemon[pokemon_id]
-    # Sprite
     frames, durations = load_gif(p['sprite_path'])
     scaled_frames = [pygame.transform.scale(f, (f.get_width()*3, f.get_height()*3)) for f in frames]
-    # Empreinte
     footprint = pygame.image.load(p['footprint_path']).convert_alpha()
     footprint = pygame.transform.scale(footprint, (footprint.get_width()*3, footprint.get_height()*3))
-    # Couleur de fond
-    colors = [hex_to_rgb(type_colors[t]) for t in p['types']]
+    colors = [pygame.Color(type_colors[t]) for t in p['types']]
     bg_color = mix_colors(colors)
     return {**p, 'frames': scaled_frames, 'durations': durations, 'footprint': footprint, 'bg_color': bg_color}
 
@@ -93,10 +95,12 @@ if "cry_path" in pokemon:
     except:
         pass
 
-# Grillage
 GRID_WIDTH = WINDOW_WIDTH*2
-grid_surface = pygame.image.fromstring(create_grid_overlay(GRID_WIDTH, WINDOW_HEIGHT, 25, 35).tobytes(),
-                                       (GRID_WIDTH, WINDOW_HEIGHT), "RGBA")
+grid_surface = pygame.image.fromstring(
+    create_grid_overlay(GRID_WIDTH, WINDOW_HEIGHT, 25, 35).tobytes(),
+    (GRID_WIDTH, WINDOW_HEIGHT),
+    "RGBA"
+)
 grid_offset_x, grid_speed = 0, 0.3
 
 running = True
@@ -112,14 +116,11 @@ while running:
             elif event.key == pygame.K_LEFT:
                 current_index = (current_index - 1) % len(pokemon_ids_sorted)
 
-            # Si le Pokémon a changé, mettre à jour
             if current_index != previous_index:
-                # Changer de Pokémon
                 pokemon_id = pokemon_ids_sorted[current_index]
                 pokemon = load_pokemon(pokemon_id)
                 current_frame = time_accumulator = 0
 
-                # Jouer le cri du Pokémon
                 if current_cry:
                     current_cry.stop()
                 try:
@@ -136,7 +137,7 @@ while running:
         time_accumulator = 0
         current_frame = (current_frame + 1) % len(pokemon['frames'])
 
-    # Animation grillage
+    # Animation grille
     grid_offset_x -= grid_speed
     if grid_offset_x <= -WINDOW_WIDTH:
         grid_offset_x = 0
@@ -177,36 +178,21 @@ while running:
     screen.blit(panel, (info_x, info_y))
 
     # Nom + types
-    draw_text(screen, f"•{pokemon_ids_sorted[(current_index)%len(pokemon_ids_sorted)]} {pokemon['name']}", font, (0,0,0), info_x+20, info_y+20)
+    screen.blit(font.render(f"•{pokemon_ids_sorted[current_index]} {pokemon['name']}", True, (0,0,0)), (info_x+20, info_y+20))
     type_x, type_y = info_x + 20, info_y + 70
-
     for t in pokemon['types']:
         rect = pygame.Rect(type_x, type_y, 80, 30)
+        pygame.draw.rect(screen, pygame.Color(type_colors[t]), rect, border_radius=5)
 
-        # Pastille
-        pygame.draw.rect(
-            screen,
-            hex_to_rgb(type_colors[t]),
-            rect,
-            border_radius=5
-        )
-
-        text = t.upper()
-        text_surface = small_font.render(text, True, (255, 255, 255))  # texte principal
+        # Texte centré avec contour noir
+        text_surface = small_font.render(t.upper(), True, (255,255,255))
         text_rect = text_surface.get_rect(center=rect.center)
-
-        # Contour noir
-        outline_color = (0, 0, 0)
-        outline_offsets = [(-1,0), (1,0), (0,-1), (0,1)]
-
-        for ox, oy in outline_offsets:
-            outline_surf = small_font.render(text, True, outline_color)
-            outline_rect = outline_surf.get_rect(center=(text_rect.centerx + ox, text_rect.centery + oy))
+        outline_color = (0,0,0)
+        for ox, oy in [(-1,0),(1,0),(0,-1),(0,1)]:
+            outline_surf = small_font.render(t.upper(), True, outline_color)
+            outline_rect = outline_surf.get_rect(center=(text_rect.centerx+ox, text_rect.centery+oy))
             screen.blit(outline_surf, outline_rect)
-
-        # Texte principal (par-dessus)
         screen.blit(text_surface, text_rect)
-
         type_x += 90
 
     # Stats
@@ -217,8 +203,7 @@ while running:
     # Empreinte
     footprint_panel = pygame.Surface((pokemon['footprint'].get_width()+20, pokemon['footprint'].get_height()+20), pygame.SRCALPHA)
     footprint_panel.fill((128,128,128,180))
-    fpx = info_x + 300
-    fpy = info_y + 120
+    fpx, fpy = info_x + 300, info_y + 120
     screen.blit(footprint_panel, (fpx, fpy))
     screen.blit(pokemon['footprint'], (fpx+10, fpy+10))
 
