@@ -108,22 +108,28 @@ while running:
         if event.type == pygame.QUIT:
             running = False
         elif event.type == pygame.KEYDOWN:
+            previous_index = current_index
             if event.key == pygame.K_RIGHT:
                 current_index = (current_index + 1) % len(pokemon_ids_sorted)
             elif event.key == pygame.K_LEFT:
                 current_index = (current_index - 1) % len(pokemon_ids_sorted)
-            # Changer de Pokémon
-            pokemon_id = pokemon_ids_sorted[current_index]
-            pokemon = load_pokemon(pokemon_id)
-            current_frame = time_accumulator = 0
-            if current_cry:
-                current_cry.stop()
-            try:
-                if "cry_path" in pokemon:
-                    current_cry = pygame.mixer.Sound(pokemon["cry_path"])
-                    current_cry.play()
-            except:
-                pass
+
+            # Si le Pokémon a changé, mettre à jour
+            if current_index != previous_index:
+                # Changer de Pokémon
+                pokemon_id = pokemon_ids_sorted[current_index]
+                pokemon = load_pokemon(pokemon_id)
+                current_frame = time_accumulator = 0
+
+                # Jouer le cri du Pokémon
+                if current_cry:
+                    current_cry.stop()
+                try:
+                    if "cry_path" in pokemon:
+                        current_cry = pygame.mixer.Sound(pokemon["cry_path"])
+                        current_cry.play()
+                except:
+                    pass
 
     # Animation GIF
     time_accumulator += dt
@@ -173,7 +179,7 @@ while running:
     screen.blit(panel, (info_x, info_y))
 
     # Nom + types
-    draw_text(screen, f"•{pokemon['name']}", font, (0,0,0), info_x+20, info_y+20)
+    draw_text(screen, f"•{pokemon_ids_sorted[(current_index)%len(pokemon_ids_sorted)]} {pokemon['name']}", font, (0,0,0), info_x+20, info_y+20)
     type_x, type_y = info_x+20, info_y+70
     for t in pokemon['types']:
         pygame.draw.rect(screen, hex_to_rgb(type_colors[t]), (type_x, type_y, 80,30), border_radius=5)
